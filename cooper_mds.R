@@ -74,5 +74,11 @@ dfout$unq <- factor(dfout$date)
 ggplot(dfout, aes(x = x, y = y, colour = unq)) + 
 geom_point(size =5) + facet_grid(. ~ wh)
 
+#
+# Look at species contributions
+#
+
+sort(xout$species[,1])
+sort(xout$species[,2])
 
 
